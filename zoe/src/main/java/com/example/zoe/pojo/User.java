@@ -1,6 +1,20 @@
 package com.example.zoe.pojo;
 
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import javax.persistence.*;
+
+/*
+* 建立对数据库的映射*/
+@Entity
+@Table(name = "user")
+@JsonIgnoreProperties({"handler","hibernateLazyInitializer"})
+
 public class User {
+    @Id
+            @GeneratedValue(strategy = GenerationType.IDENTITY)
+            @Column(name = "id")
     int id;
     String username;
     String password;

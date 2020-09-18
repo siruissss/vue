@@ -101,6 +101,7 @@
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-jasper</artifactId>
+            <version>8.5.23</version>
         </dependency>
 
 <!--        mysql-->
